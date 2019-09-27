@@ -51,3 +51,29 @@ exports[`<CartCount /> updates via props 1`] = `
   </TransitionGroup>
 </CartCount__AnimationStyles>
 `;
+
+exports[`<CartCount /> updates via props 2`] = `
+<CartCount__AnimationStyles>
+  <TransitionGroup
+    childFactory={[Function]}
+    component="div"
+  >
+    <CSSTransition
+      className="count"
+      classNames="count"
+      key="10"
+      timeout={
+        Object {
+          "enter": 400,
+          "exit": 400,
+        }
+      }
+      unmountOnExit={true}
+    >
+      <CartCount__Dot>
+        10
+      </CartCount__Dot>
+    </CSSTransition>
+  </TransitionGroup>
+</CartCount__AnimationStyles>
+`;
