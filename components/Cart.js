@@ -11,6 +11,7 @@ import CartItem from "./CartItem";
 import calctotalPrice from "../lib/calcTotalPrice";
 import formatMoney from "../lib/formatMoney";
 import TakeMyMoney from "./TakeMyMoney";
+import TakeMyMoneyPaystack from "./TakeMyMoneyPaystack";
 
 const LOCAL_STATE_QUERY = gql`
   query {
@@ -57,12 +58,15 @@ const Cart = props => {
                 <CartItem key={cartItem.id} cartItem={cartItem} />
               ))}
             </ul>
+            <p className="total">{formatMoney(calctotalPrice(me.cart))}</p>
             <footer>
-              <p>{formatMoney(calctotalPrice(me.cart))}</p>
               {me.cart.length && (
-                <TakeMyMoney>
-                  <SickButton>Checkout</SickButton>
-                </TakeMyMoney>
+                <>
+                  <TakeMyMoney>
+                    <SickButton>Pay with Stripe</SickButton>
+                  </TakeMyMoney>
+                  <TakeMyMoneyPaystack />
+                </>
               )}
             </footer>
           </CartStyles>
