@@ -71,7 +71,6 @@ class TakeMyMoneyPaystack extends React.Component {
     }).catch(err => {
       alert(err.message);
     });
-    console.log("order from paystack frontend", order);
     Router.push({
       pathname: "/order",
       query: { id: order.data.createOrderPaystack.id }
