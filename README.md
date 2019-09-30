@@ -20,6 +20,12 @@ Install dependencies:
 npm install
 ```
 
+Run the app
+
+```sh
+npm run dev
+```
+
 ## Contributing
 
 1. Fork it!
