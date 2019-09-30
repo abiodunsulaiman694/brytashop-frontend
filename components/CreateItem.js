@@ -109,7 +109,7 @@ class CreateItem extends Component {
                 onChange={this.handleChange}
               />
 
-              <label htmlFor="price">Price</label>
+              <label htmlFor="price">Price(in Kobo)</label>
               <input
                 type="number"
                 name="price"

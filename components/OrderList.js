@@ -41,7 +41,7 @@ class OrderList extends Component {
           if (error) return <Error error={error} />;
           return (
             <div>
-              <h2>You have {orders.length} orders</h2>
+              <h2>You have {orders.length} order{orders.length > 1 && "s"}</h2>
               <OrderUl>
                 {orders.map(order => (
                   <OrderItemStyles key={order.id}>
