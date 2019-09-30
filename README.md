@@ -1,6 +1,6 @@
 # Brytashop - Built with Next.js, Apollo, GraphQL, Prisma
 
-This is an e-commerce app built with Next.js, Apollo, Prisma, Stripe and Paystack
+This is an e-commerce app built with Next.js, Apollo, GraphQL, Prisma, Stripe and Paystack
 
 [Backend(API) repo on: https://github.com/abiodunsulaiman694/brytashop-backend](https://github.com/abiodunsulaiman694/brytashop-backend)
 
