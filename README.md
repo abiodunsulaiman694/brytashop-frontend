@@ -17,7 +17,7 @@ Clone or download repo
 Install dependencies:
 
 ```sh
-npm install react-paystack --save
+npm install
 ```
 
 ## Contributing
