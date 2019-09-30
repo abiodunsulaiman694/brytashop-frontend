@@ -14,6 +14,8 @@ This is an e-commerce app built with Next.js, Apollo, Prisma, Stripe and Paystac
 
 Clone or download repo
 
+Install dependencies:
+
 ```sh
 npm install react-paystack --save
 ```
